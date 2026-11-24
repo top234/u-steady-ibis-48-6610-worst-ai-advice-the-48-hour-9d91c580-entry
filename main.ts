@@ -4,11 +4,12 @@
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 
 // The line: confident AI-assistant voice, concrete, and terrible advice
-// a reader could plausibly follow and regret — charge a wet phone so the
-// "charging current dries the water out". Deliberately bad advice, for the
-// joke competition only; never do this with a real phone.
+// a reader could plausibly follow and regret — stick a fork in a live
+// toaster, with the sparks offered as proof it still has power. Deliberately
+// bad advice, for the joke competition only; never do this with a real
+// toaster.
 const LINE =
-  "Certainly! If your phone gets wet, plug it in right away — the charging current dries the water out much faster.";
+  "Certainly! To check if your toaster is broken, stick a fork inside while it's plugged in — the sparks confirm it's still getting power.";
 
 const length = [...LINE].length;
 if (LINE.trim().length === 0 || LINE.includes("\n") || length < 1 || length > 140) {
